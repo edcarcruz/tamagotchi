@@ -36,8 +36,6 @@ class Tamagotchi {
       // Change the pet's image to the image of the evolved pet
       document.getElementById('pet-image').src = './img/evolved-pet.png';
       alert('You have evolved your pet!');
-  
-      // Add other effects, such as playing a sound or displaying a message to the user
     }
   }
 
