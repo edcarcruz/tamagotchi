@@ -7,6 +7,7 @@ function startGame() {
 
   window.addEventListener("load", startGame)
 
+
 class Tamagotchi {
   constructor(name) {
     this.name = name;
@@ -27,6 +28,18 @@ class Tamagotchi {
   play() {
     this.boredom--;
   }
+  evolvePet() {
+    // Get the pet's age
+    const petAge = document.getElementById('age').textContent;
+  
+    if (petAge === '5') {
+      // Change the pet's image to the image of the evolved pet
+      document.getElementById('pet-image').src = './img/evolved-pet.png';
+      alert('You have evolved your pet!');
+  
+      // Add other effects, such as playing a sound or displaying a message to the user
+    }
+  }
 
   update() {
     this.age++;
@@ -39,6 +52,7 @@ class Tamagotchi {
       this.die();
     }
   }
+  
 
   die() {
     alert(`${this.name} has died!`);
@@ -58,6 +72,7 @@ function updateMetrics() {
   
   setInterval(function () {
     tamagotchi.update();
+    tamagotchi.evolvePet();
   }, 10000);
   
   // Add event listeners to the buttons
