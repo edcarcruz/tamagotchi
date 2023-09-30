@@ -35,3 +35,4 @@ class Tamagotchi {
     alert(`${this.name} has died!`);
   }
 }
+const tamagotchi = new Tamagotchi("My Tamagotchi");
