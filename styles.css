@@ -13,6 +13,7 @@ h1{
     font-family: comic sans ms;
 }
 #pet-image{
+    animation: move-left-right 2s infinite;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -52,7 +53,10 @@ button{
     text-align: center;
   }
   img {
-    animation: move-left-right 2s infinite;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   @keyframes move-left-right {
