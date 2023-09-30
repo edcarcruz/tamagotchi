@@ -38,6 +38,16 @@ class Tamagotchi {
       alert('You have evolved your pet!');
     }
   }
+  evolvePet2() {
+    // Get the pet's age
+    const petAge = document.getElementById('age').textContent;
+  
+    if (petAge === '10') {
+      // Change the pet's image to the image of the evolved pet
+      document.getElementById('pet-image').src = './img/final_form.png';
+      alert('Your pet has evolved to its final form!');
+    }
+  }
 
   update() {
     this.age++;
@@ -71,6 +81,7 @@ function updateMetrics() {
   setInterval(function () {
     tamagotchi.update();
     tamagotchi.evolvePet();
+    tamagotchi.evolvePet2();
   }, 10000);
   
   // Add event listeners to the buttons
