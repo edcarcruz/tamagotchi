@@ -1,5 +1,5 @@
+const petName = prompt('What is your pet\'s name?');
 function startGame() {
-    const petName = prompt('What is your pet\'s name?');
 
     document.getElementById('pet-name').textContent = petName;
   
@@ -66,7 +66,7 @@ class Tamagotchi {
     alert(`${this.name} has died!`);
   }
 }
-const tamagotchi = new Tamagotchi("My Tamagotchi");
+const tamagotchi = new Tamagotchi(petName);
 
 function updateMetrics() {
     // Update the values of the metrics
