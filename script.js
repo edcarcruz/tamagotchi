@@ -1,3 +1,14 @@
+function startGame() {
+    // Get the user's input
+    const petName = prompt("What is your pet's name?");
+  
+    // Create a new Tamagotchi object with the user's input
+    const tamagotchi = new Tamagotchi(petName);
+  
+  }
+
+  window.addEventListener("load", startGame);
+  
 class Tamagotchi {
   constructor(name) {
     this.name = name;
