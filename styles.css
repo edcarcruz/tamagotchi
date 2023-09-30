@@ -1,0 +1,68 @@
+body{
+    background-image: url(./img/magical-forest-pz.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+}
+#pet-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px; 
+}
+
+table{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+#feed-button {
+    background-color: green;
+    color: white;
+  }
+  
+  #sleep-button {
+    background-color: orange;
+    color: black;
+  }
+  
+  #play-button {
+    background-color: blue;
+    color: white;
+  }
+  #pet-name {
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+  }
+  img {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
