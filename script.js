@@ -36,3 +36,30 @@ class Tamagotchi {
   }
 }
 const tamagotchi = new Tamagotchi("My Tamagotchi");
+
+function updateMetrics() {
+    // Update the values of the metrics
+    document.getElementById("hunger").innerHTML = tamagotchi.hunger;
+    document.getElementById("sleepiness").innerHTML = tamagotchi.sleepiness;
+    document.getElementById("boredom").innerHTML = tamagotchi.boredom;
+    document.getElementById("age").innerHTML = tamagotchi.age;
+  }
+  
+  setInterval(updateMetrics, 100);
+  
+  setInterval(function () {
+    tamagotchi.update();
+  }, 10000);
+  
+  // Add event listeners to the buttons
+  document.getElementById("feed-button").addEventListener("click", () => {
+    tamagotchi.feed();
+  });
+  
+  document.getElementById("sleep-button").addEventListener("click", () => {
+    tamagotchi.sleep();
+  });
+  
+  document.getElementById("play-button").addEventListener("click", () => {
+    tamagotchi.play();
+  });
