@@ -66,4 +66,10 @@ button{
       transform: translateX(10px);
     }
   }
+
+  .pet-name {
+    font-size: 30px;
+    color: purple;
+    text-align: center;
+  }
   
