@@ -16,15 +16,26 @@ class Tamagotchi {
   }
 
   feed() {
-    this.hunger--;
+    if (this.hunger > 0) {
+
+      this.hunger--
+    }
   }
 
   sleep() {
-    this.sleepiness--;
+    if (this.sleepiness > 0) {
+
+      this.sleepiness--;
+    }
+    
   }
 
   play() {
-    this.boredom--;
+    if (this.boredom > 0) {
+      
+      this.boredom--;
+    }
+    
   }
   evolvePet() {
     // Get the pet's age
